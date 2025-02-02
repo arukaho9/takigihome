@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ja">
+<html>
+  <head>
+    <meta charset="utf-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>薪と焚き火と</title>
+    <link href="style2.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+<script type="text/javascript">
+        $(document).ready(function(){
+            $('.slider').bxSlider({
+                auto: true,
+                pause: 5000, // 画像がスライドするスピード
+                slideWidth: 400, // 画像の横幅
+            });
+        });
+</script>
+  </head>
+
+  <body>
+    <div class="app">
+        <header>
+            <h1 class="header">薪と焚き火と</h1>
+        </header>        
+      <div class="main">
+        <div class="sidebar">サイドバー</div>
+
+        <div class="content">
+            <div class="flex-content">
+               <div class="slider">
+                <img src="sample.png" alt="サンプル1">
+                <img src="sample3.jpg" alt="サンプル3">
+                <img src="sample4.jpg" alt="サンプル4">
+               </div> 
+            </div>
+          <div class="fixe-content">
+            <div class="recent-update">
+                <h2 class="midashi">最近更新したの</h2>
+                <div>
+                    <ul class="recent">
+                        <li>あいうえおあああああああああ</li>
+                        <li>なんか入れる2</li>
+                        <li>なんか入れる3</li>
+                    </ul>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
