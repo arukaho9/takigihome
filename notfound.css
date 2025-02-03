@@ -1,0 +1,30 @@
+.container{
+  font-size: 24px;
+  margin: 25px;
+  width: auto;
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+}
+.notfound{
+    width:fit-content;
+    height:fit-content;
+}
+#home-link {
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    font-size: 1.2rem;
+    line-height: 1.2rem;
+    background: #fff;
+    color: #111;
+    padding: 10px;
+    border: solid 1px;
+    border-radius: 50%;
+    box-shadow: 0 2px 10px -6px rgba(0,0,0,.5), 0 3px 10px -4px rgba(0,0,0,.2);
+    z-index: 10;
+}
+#home-link:hover {
+    background: #111;
+    color: #FFF;
+}
