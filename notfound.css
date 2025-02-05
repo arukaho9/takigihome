@@ -28,3 +28,8 @@
     background: #111;
     color: #FFF;
 }
+
+.footbanner{
+    display: flex;
+    justify-content: center;
+}
