@@ -26,8 +26,29 @@
         <header>
             <h1 class="header">薪と焚き火と</h1>
             <div class="koushin">
-            <p>最終更新_2025/02/04</p>
-            </div>
+              <p>
+              更新日: <time id="modified_date"></time>
+              </p>
+              <script>
+                const last = new Date(document.lastModified);
+                const year = last.getFullYear();
+                const month = last.getMonth() + 1;
+                const date = last.getDate();
+                let fixedMonth = month;
+                let fixedDate = date;
+                if (month < 10) {
+                fixedMonth = "0" + month;
+                }
+                if (date < 10) {
+                fixedDate = "0" + date;
+                }
+                const viewDateText = year + "年" + month + "月" + date + "日";
+                const datetimeText = year + "-" + fixedMonth + "-" + fixedDate;
+                const target = document.getElementById('modified_date');
+                target.textContent = viewDateText;
+                target.setAttribute("datetime", datetimeText);
+                </script>
+              </div>
         </header>        
       <div class="main">
         <div class="sidebar">
