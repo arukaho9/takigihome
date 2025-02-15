@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ja">
+<html>
+  <head>
+    <meta charset="utf-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>薪と焚き火と</title>
+    <link href="./css/style2.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+  </head>
+  <body oncontextmenu="return false;">
+    <div class="app">
+        <header>
+            <h1 class="header">薪と焚き火と</h1>
+            <div class="koushin">
+              <p>
+              更新日: <time id="modified_date"></time>
+              </p>
+              <script>
+                const last = new Date(document.lastModified);
+                const year = last.getFullYear();
+                const month = last.getMonth() + 1;
+                const date = last.getDate();
+                let fixedMonth = month;
+                let fixedDate = date;
+                if (month < 10) {
+                fixedMonth = "0" + month;
+                }
+                if (date < 10) {
+                fixedDate = "0" + date;
+                }
+                const viewDateText = year + "年" + month + "月" + date + "日";
+                const datetimeText = year + "-" + fixedMonth + "-" + fixedDate;
+                const target = document.getElementById('modified_date');
+                target.textContent = viewDateText;
+                target.setAttribute("datetime", datetimeText);
+                </script>
+              </div>
+        </header>        
+      <div class="main">
+        <div class="content">
+            <div class="flex-content">
+                <h1>創作言語</h1>
+                <p>創作言語関連のものが入ってます</p>
+                <p><a href="https://arukaho9.github.io/takigihome/wliageo.html">ウリアジェオ語</a></p>
+                <p><a href="">イソカラロ語</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer>
+        <div class="footbanner">
+        <img src="./img/takigi buner.png" alt="バナー画像">
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
